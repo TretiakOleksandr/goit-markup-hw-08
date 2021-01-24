@@ -1,37 +1,92 @@
+// .clients-section{
+//     padding: 94px 0;
+// }
+
+// .clients-header{
+//     margin-bottom: 50px;
+// }
+
+// .clients-list{
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .clients-list-item:not(:last-child){
+//     margin-right: 30px;
+// }
+
+// .clients-list-link{
+//     display: flex;
+//     width: 170px;
+//     height: 90px;
+//     justify-content: center;
+//     align-items: center;
+//     border: 1px solid #AFB1B8;
+//     border-radius: 4px;
+
+//     transition-property: border;
+//     transition-duration: 250ms;
+//     transition-timing-function: var(--time-func); 
+
+//     &:hover,
+//     &:focus{
+//     border: 1px solid var(--accent-color);
+// }
+// }
+
+// .clients-list-icon{
+//     fill: #AFB1B8;
+
+//     transition-property: fill;
+//     transition-duration: 250ms;
+//     transition-timing-function: var(--time-func);
+
+//     .clients-list-link:hover &,
+//     .clients-list-link:focus &{
+//     fill: var(--accent-color);
+// }
+
+// }
+
 .clients-section{
-    padding: 94px 0;
+    padding: 60px 0;
 }
 
-.clients-header{
-    margin-bottom: 50px;
+.clients-header {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.179;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+    margin-bottom: 30px;
 }
 
 .clients-list{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
 }
 
-.clients-list-item:not(:last-child){
-    margin-right: 30px;
-}
-
-.clients-list-link{
+.clients-list-link {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 90px;
     justify-content: center;
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: var(--time-func); 
+    margin-top: 30px;
+    margin-left: 30px;
 
     &:hover,
     &:focus{
-    border: 1px solid var(--accent-color);
-}
+        border: 1px solid var(--accent-color);
+    }
 }
 
 .clients-list-icon{
@@ -47,3 +102,27 @@
 }
 
 }
+
+@media screen and (min-width: 768px) {
+    .clients-list-link {
+        width: 226px;
+        height: 90px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .clients-section{
+        padding: 94px 0;
+    }
+
+    .clients-header {
+        margin-bottom: 50px;
+    }
+    
+    .clients-list-link {
+        width: 170px;
+        height: 90px;
+    }
+}
+
+    

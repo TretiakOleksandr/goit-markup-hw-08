@@ -454,6 +454,7 @@ img {
 
 .comand-section {
   padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #F5F4FA;
 }
 
@@ -515,6 +516,12 @@ img {
   width: 450px;
   height: 460px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .comand-list-item {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -589,31 +596,34 @@ img {
 }
 
 .clients-section {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .clients-header {
-  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.179;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
 }
 
 .clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.clients-list-item:not(:last-child) {
-  margin-right: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .clients-list-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 90px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -623,12 +633,8 @@ img {
           align-items: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  -webkit-transition-property: border;
-  transition-property: border;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--time-func);
-          transition-timing-function: var(--time-func);
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .clients-list-link:hover, .clients-list-link:focus {
@@ -648,6 +654,26 @@ img {
 .clients-list-link:hover .clients-list-icon,
 .clients-list-link:focus .clients-list-icon {
   fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list-link {
+    width: 226px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-section {
+    padding: 94px 0;
+  }
+  .clients-header {
+    margin-bottom: 50px;
+  }
+  .clients-list-link {
+    width: 170px;
+    height: 90px;
+  }
 }
 
 .footer {
