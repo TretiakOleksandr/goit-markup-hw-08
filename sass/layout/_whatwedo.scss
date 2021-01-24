@@ -49,3 +49,9 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 }
+
+@media screen and (max-width: 1199px) {
+    .whatwedo-section{
+        display: none;
+    }
+}
