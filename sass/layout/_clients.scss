@@ -1,0 +1,49 @@
+.clients-section{
+    padding: 94px 0;
+}
+
+.clients-header{
+    margin-bottom: 50px;
+}
+
+.clients-list{
+    display: flex;
+    justify-content: center;
+}
+
+.clients-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.clients-list-link{
+    display: flex;
+    width: 170px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-func); 
+
+    &:hover,
+    &:focus{
+    border: 1px solid var(--accent-color);
+}
+}
+
+.clients-list-icon{
+    fill: #AFB1B8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-func);
+
+    .clients-list-link:hover &,
+    .clients-list-link:focus &{
+    fill: var(--accent-color);
+}
+
+}

@@ -1,0 +1,51 @@
+.whatwedo-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.whatwedo-list{
+    display: flex;
+}
+
+.whatwedo-header{
+    margin-bottom: 50px;
+}
+
+.whatwedo-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.whatwedo-thumb{
+    position: relative;
+}
+
+.whatwedo-label{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    padding: 27px;
+    background-color: rgba(1, 1, 3, 0.8);
+}
+
+.text-label{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF
+}
+
+.whatwedo-header,
+.comand-header,
+.clients-header{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.167;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}

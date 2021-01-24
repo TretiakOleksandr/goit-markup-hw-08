@@ -1,0 +1,126 @@
+.header{
+    border-bottom: 1px solid #ECECEC;
+
+    .container{
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
+    
+}
+
+.site-nav{
+    display: flex;
+    align-items: center;
+}
+
+.site-nav-menu{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.site-nav-menu-item{
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    height: 100%;
+
+    &:not(:last-child){
+        margin-right: 50px;
+    }
+}
+
+.site-nav-menu-link{ 
+    display: inline-block;
+    height: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;    
+    color: #212121;
+}
+
+.current{
+     color: var(--accent-color);
+
+     &::after{
+        position: absolute;
+        bottom: -31.7px;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+    }
+}
+
+.contacts-list{
+    display: flex;
+    align-items: center;
+}
+
+.header .site-logo{
+    margin-right: 93px;
+}
+
+.contacts{
+    margin-left: auto;
+}
+
+.contacts,
+.footer-contacts{
+     font-style: normal;
+}
+
+.site-logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.logo-color{
+     color: #2196F3;
+}
+
+.site-nav-menu-link:hover,
+.site-nav-menu-link:focus,
+.contacts-list-link:hover,
+.contacts-list-link:focus,
+.footer-address-link:hover,
+.footer-address-link:focus{
+     color: var(--accent-color);
+}
+
+.contacts-list-item:not(:last-child){
+    margin-right: 40px;
+}
+
+.contacts-list-link{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    padding: 1px;
+    color: #757575;
+}
+
+.contact-list-icon{
+    fill: #757575;
+    margin-right: 10px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-func);
+
+    .contacts-list-link:hover &,
+    .contacts-list-link:focus &{
+    fill: var(--accent-color);
+    }
+}

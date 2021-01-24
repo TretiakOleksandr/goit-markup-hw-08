@@ -1,0 +1,5 @@
+.animation{
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-func);
+}
